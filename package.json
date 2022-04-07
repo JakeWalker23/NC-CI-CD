@@ -1,0 +1,28 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "description": "express-test",
+  "main": "index.js",
+  "scripts": {
+    "acceptance-test": "jest __tests__/app.test.js",
+    "cy:open": "cypress open",
+    "test": "jest __tests__/utils.test.js",
+    "start": "node listen.js",
+    "dev": "nodemon listen.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cypress": "^8.7.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint": "^8.2.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
+    "supertest": "^6.1.6"
+  }
+}

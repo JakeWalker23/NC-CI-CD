@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EC2</title>
+    <style>
+      .invisible {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <script>
+    function reveal(event) {
+      document
+        .getElementsByClassName('invisible')[0]
+        .classList.remove('invisible');
+      event.target.classList.add('invisible');
+    }
+  </script>
+  <body>
+    <h1>EC2 - Elastic Compute Cloud</h1>
+    <p class="invisible">EC2 is just the coolest!</p>
+    <button onclick="reveal(event)" data-test-id="reveal-button">Show</button>
+  </body>
+</html>
