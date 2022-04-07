@@ -1,12 +1,11 @@
 name: main.yml
-
-on:
+"on":
   pull_request:
-    branches: [main]
-
+    branches:
+      - main
   push:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   lint:
     name: Linting Job
