@@ -2,10 +2,10 @@ name: main.yml
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - master
 jobs:
   lint:
     name: Linting Job
