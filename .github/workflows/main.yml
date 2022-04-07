@@ -11,6 +11,7 @@ jobs:
     name: Linting Job
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -22,10 +23,12 @@ jobs:
         run: npm install eslint
       - name: Run ES linting
         run: npm run lint
+
   unit-tests:
     name: Unit Tests
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
