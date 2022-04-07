@@ -13,11 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:
-        - name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v2
-        - name: Install node v14
-        uses: actions/setup-node@v2
-        - name: Install eslint
-        run: npm install eslint
-        - name: Run ES linting
-        run: npm run lint
